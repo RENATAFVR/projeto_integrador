@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agendamento para todos</title>
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+</head>
+
+<body>
+    <header class="header bg-p7-aqua">
+        <div class="container">
+            <div class="box-4">
+                <h1 class="fonte22 fnc-branco">
+                    Agendamento para todos
+                </h1>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container flex justify-center">
+            <div class="box-8 shadow-down bg-branco pd-20  mg-t-4">
+                <form method="POST">
+                    {% csrf_token %}
+                    <h1 class="fonte24 mg-b-3"> Cadastre-se</h1>
+                
+                    <div class="box-12">{{ form.nome.label_tag }} {{ form.nome }}</div>
+                    <div class="box-3">{{ form.cep.label_tag }} {{ form.cep }}</div>
+                    <div class="box-7">{{ form.logradouro.label_tag }} {{ form.logradouro }}</div>
+                    <div class="box-2">{{ form.numero.label_tag }} {{ form.numero }}</div>
+                    <div class="box-6">{{ form.bairro.label_tag }} {{ form.bairro }}</div>
+                    <div class="box-6">{{ form.cidade.label_tag }} {{ form.cidade }}</div>
+                    <div class="box-8">{{ form.email.label_tag }} {{ form.email }}</div>
+                    <div class="box-4">{{ form.senha.label_tag }} {{ form.senha }}</div>
+                
+                    <div class="box-12">
+                        <input type="submit" value="Cadastrar" class="btn bg-p4-tan fnc-branco">
+                    </div>
+                </form>
+                
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

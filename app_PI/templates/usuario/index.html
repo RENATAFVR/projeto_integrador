@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>agendamento de consulta</title>
+    <title>agendamento para todos</title>
     <link rel="stylesheet" href="{% static 'css/site.css' %}">
 </head>
 <body>
-    <header class="header">
+    <header class="header bg-p7-aqua">
         <div class="container">
             <div class="box-4">
-                <h1 class="titulo">
-                    Fila Zero
+                <h1 class="fonte22 fnc-branco">
+                    Agendamento para todos
                 </h1>
-
             </div>
 
             <div class="box-8">
@@ -26,10 +25,14 @@
     </header>
     <section>
         <div class="container">
-            <div class="box-8">
-                <form action="">
-                    
-                </form>
+            <div class="box-8 mg-t-8 flex justify-center flex-wrap item-centro">
+                <h1 class="fonte60 fw-900 mg-t-4">Agendamento online </h1>
+                <h2 class="fonte20">Agora você mesmo pode agendar suas consultas de forma prática e rápida.</h2>
+
+                <a href="{% url 'cadastro-usuario' %}" class="btn bg-p4-tan fnc-branco mg-t-4"> Cadastre-se </a>
+            </div>
+            <div class="box-4">
+                <img src="{% static 'img/medical.png' %}" alt="">
             </div>
         </div>
     </section>
