@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Agendamento para todos{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+</head>
+<body>
+    <header class="header bg-p7-aqua">
+        <div class="container">
+            <div class="box-4">
+                <h1 class="fonte22 fnc-branco">
+                    Agendamento para todos
+                </h1>
+            </div>
+
+            <div class="box-8 flex justify-end item-centro">
+                <ul class="wd-100 flex justify-end item-centro">
+                    <li class="mg-l-4 fnc-branco fw-bold"><a href="{% url 'home' %}">Clinicas </a></li>
+                    <li class="mg-l-4 fnc-branco fw-bold"><a href="{% url 'cadastro-usuario' %}">Cadastre-se </a></li>
+                    <li class="mg-l-4 fnc-branco fw-bold"><a href="{% url 'login' %}">Login </a></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </header>
+    
+    <main>       
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meu Site</p>
+    </footer>
+</body>
+</html>

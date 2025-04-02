@@ -1,28 +1,6 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>agendamento para todos</title>
-    <link rel="stylesheet" href="{% static 'css/site.css' %}">
-</head>
-<body>
-    <header class="header bg-p7-aqua">
-        <div class="container">
-            <div class="box-4">
-                <h1 class="fonte22 fnc-branco">
-                    Agendamento para todos
-                </h1>
-            </div>
-
-            <div class="box-8">
-
-            </div>
-
-
-        </div>
-    </header>
+{% extends 'shared/header.html' %}
+{% load static %} 
+{% block content %}
     <section>
         <div class="container">
             <div class="box-8 mg-t-8 flex justify-center flex-wrap item-centro">
@@ -36,6 +14,4 @@
             </div>
         </div>
     </section>
-    
-</body>
-</html>
+    {% endblock %}
