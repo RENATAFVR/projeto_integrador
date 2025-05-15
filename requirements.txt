@@ -1,0 +1,6 @@
+Django==4.2.11
+asgiref==3.7.2
+django-cpf-cnpj==1.0.0  # Testado até Django 4.2 — verifique em produção
+django-widget-tweaks==1.4.12
+sqlparse==0.4.4
+django-extensions==3.2.3
